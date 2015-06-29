@@ -11,6 +11,8 @@ import UIKit
 class TTViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var ttBillViewCell: TTBillViewCell?
+    var ttTipViewCell: TTTipViewCell?
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -40,14 +42,22 @@ class TTViewController: UIViewController, UITableViewDataSource, UITableViewDele
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
-        ttBillViewCell = (self.tableView.dequeueReusableCellWithIdentifier("Bill", forIndexPath: indexPath) as! TTBillViewCell)
-        
-        let cell = ttBillViewCell!
+        var cell: UITableViewCell = UITableViewCell()
+        switch (indexPath.row) {
+        case 0:
+            ttBillViewCell = (self.tableView.dequeueReusableCellWithIdentifier("Bill", forIndexPath: indexPath) as! TTBillViewCell)
+            
+            cell = ttBillViewCell!
+        case 1:
+            ttTipViewCell = (self.tableView.dequeueReusableCellWithIdentifier("Tip", forIndexPath: indexPath) as! TTTipViewCell)
+            cell = ttTipViewCell!
+        default:
+            break
+        }
         
         
         return cell

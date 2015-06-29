@@ -38,8 +38,8 @@
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ldd-tt-th1">
                                                     <rect key="frame" x="81" y="7" width="467" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -66,6 +66,40 @@
                                         <connections>
                                             <outlet property="billDisplay" destination="Ldd-tt-th1" id="7Sz-m2-bWk"/>
                                             <outlet property="billLabel" destination="kBg-hY-DIx" id="fCn-Vt-DGz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Tip" rowHeight="150" id="N5d-45-jC6" customClass="TTTipViewCell" customModule="TipTapSB" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N5d-45-jC6" id="VkJ-xS-CNg">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-RL-0mc">
+                                                    <rect key="frame" x="8" y="64" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-L3-SCG">
+                                                    <rect key="frame" x="89" y="42" width="215" height="65"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v5G-nF-JY1">
+                                                    <rect key="frame" x="476" y="90" width="118" height="31"/>
+                                                </slider>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UPI-4C-kcM" customClass="TTFaceView" customModule="TipTapSB" customModuleProvider="target">
+                                                    <rect key="frame" x="369" y="37" width="101" height="75"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tipAmount" destination="0jb-L3-SCG" id="aJ2-ZT-L86"/>
+                                            <outlet property="tipApprovalFace" destination="UPI-4C-kcM" id="Jri-84-njC"/>
+                                            <outlet property="tipJudgementSlider" destination="v5G-nF-JY1" id="oN8-Mh-9i7"/>
+                                            <outlet property="tipTitle" destination="goZ-RL-0mc" id="EsN-qO-UHd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

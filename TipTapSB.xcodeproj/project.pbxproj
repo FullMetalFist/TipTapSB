@@ -14,6 +14,8 @@
 		7CFE864D1B410C94008E194E /* TipTapSBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE864C1B410C94008E194E /* TipTapSBTests.swift */; };
 		7CFE86571B410CC7008E194E /* TTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE86561B410CC7008E194E /* TTViewController.swift */; };
 		7CFE86591B410E21008E194E /* TTBillViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE86581B410E21008E194E /* TTBillViewCell.swift */; };
+		7CFE865C1B41DBAB008E194E /* TTFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE865B1B41DBAB008E194E /* TTFaceView.swift */; };
+		7CFE865E1B41DCAE008E194E /* TTTipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE865D1B41DCAE008E194E /* TTTipViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		7CFE864C1B410C94008E194E /* TipTapSBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTapSBTests.swift; sourceTree = "<group>"; };
 		7CFE86561B410CC7008E194E /* TTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTViewController.swift; path = Views/TTViewController.swift; sourceTree = "<group>"; };
 		7CFE86581B410E21008E194E /* TTBillViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTBillViewCell.swift; path = Views/TTBillViewCell.swift; sourceTree = "<group>"; };
+		7CFE865B1B41DBAB008E194E /* TTFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTFaceView.swift; path = Views/TTFaceView.swift; sourceTree = "<group>"; };
+		7CFE865D1B41DCAE008E194E /* TTTipViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTTipViewCell.swift; path = Views/TTTipViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 			children = (
 				7CFE86561B410CC7008E194E /* TTViewController.swift */,
 				7CFE86581B410E21008E194E /* TTBillViewCell.swift */,
+				7CFE865D1B41DCAE008E194E /* TTTipViewCell.swift */,
+				7CFE865B1B41DBAB008E194E /* TTFaceView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -225,7 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CFE86591B410E21008E194E /* TTBillViewCell.swift in Sources */,
+				7CFE865C1B41DBAB008E194E /* TTFaceView.swift in Sources */,
 				7CFE86371B410C94008E194E /* AppDelegate.swift in Sources */,
+				7CFE865E1B41DCAE008E194E /* TTTipViewCell.swift in Sources */,
 				7CFE86571B410CC7008E194E /* TTViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
