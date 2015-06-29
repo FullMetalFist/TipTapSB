@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sHe-T8-DW5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--TipTap-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="TTViewController" customModule="TipTapSB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0ky-gx-eEZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Bill" id="bcT-CT-Jbw" customClass="TTBillViewCell" customModule="TipTapSB" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bcT-CT-Jbw" id="kBg-hY-DIx">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2F-WC-QoP">
+                                                    <rect key="frame" x="8" y="11" width="70" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="uX7-RR-RVO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ldd-tt-th1">
+                                                    <rect key="frame" x="81" y="7" width="467" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ldd-tt-th1" firstAttribute="top" secondItem="kBg-hY-DIx" secondAttribute="topMargin" constant="-1" id="2y8-af-HIG"/>
+                                                <constraint firstItem="V2F-WC-QoP" firstAttribute="centerY" secondItem="kBg-hY-DIx" secondAttribute="centerY" id="7J2-uY-yzB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ldd-tt-th1" secondAttribute="trailing" constant="44" id="Fpo-Yp-5Aq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ldd-tt-th1" secondAttribute="bottom" constant="-2" id="YZw-sW-NyK"/>
+                                                <constraint firstItem="Ldd-tt-th1" firstAttribute="top" secondItem="kBg-hY-DIx" secondAttribute="topMargin" constant="-1" id="bZI-LS-tWZ"/>
+                                                <constraint firstItem="V2F-WC-QoP" firstAttribute="leading" secondItem="kBg-hY-DIx" secondAttribute="leadingMargin" id="dpe-VM-Y4j"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ldd-tt-th1" secondAttribute="bottom" constant="-2" id="g0U-Fv-vYg"/>
+                                                <constraint firstItem="Ldd-tt-th1" firstAttribute="leading" secondItem="V2F-WC-QoP" secondAttribute="trailing" constant="3" id="gx8-sd-cAW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ldd-tt-th1" secondAttribute="trailing" constant="291" id="u2l-Qb-Oc6"/>
+                                                <constraint firstItem="Ldd-tt-th1" firstAttribute="leading" secondItem="V2F-WC-QoP" secondAttribute="trailing" constant="3" id="u6e-pA-fPX"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="2y8-af-HIG"/>
+                                                    <exclude reference="YZw-sW-NyK"/>
+                                                    <exclude reference="u2l-Qb-Oc6"/>
+                                                    <exclude reference="u6e-pA-fPX"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="billDisplay" destination="Ldd-tt-th1" id="7Sz-m2-bWk"/>
+                                            <outlet property="billLabel" destination="kBg-hY-DIx" id="fCn-Vt-DGz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="1sy-rY-kEc"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="T8a-O4-N9X"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0ky-gx-eEZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="39J-AI-o4y"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0ky-gx-eEZ" secondAttribute="bottom" id="UBf-k1-MTw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0ky-gx-eEZ" secondAttribute="trailing" constant="-16" id="kFC-Lh-qlD"/>
+                            <constraint firstItem="0ky-gx-eEZ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="wkM-ST-ZRm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TipTap" id="fzm-qw-9Ak"/>
+                    <connections>
+                        <outlet property="tableView" destination="0ky-gx-eEZ" id="zYo-ZR-Gjl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="289"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Jh-VI-adT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sHe-T8-DW5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ckc-VW-ysj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="hZb-xq-dFC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJS-da-voI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="-404"/>
+        </scene>
+    </scenes>
+</document>
