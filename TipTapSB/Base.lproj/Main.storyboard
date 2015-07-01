@@ -33,7 +33,7 @@
                                                         <constraint firstAttribute="width" constant="70" id="uX7-RR-RVO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ldd-tt-th1">
@@ -74,26 +74,44 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N5d-45-jC6" id="VkJ-xS-CNg">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-RL-0mc">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-RL-0mc">
                                                     <rect key="frame" x="8" y="64" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-L3-SCG">
-                                                    <rect key="frame" x="89" y="42" width="215" height="65"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v5G-nF-JY1">
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v5G-nF-JY1">
                                                     <rect key="frame" x="476" y="90" width="118" height="31"/>
                                                 </slider>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UPI-4C-kcM" customClass="TTFaceView" customModule="TipTapSB" customModuleProvider="target">
-                                                    <rect key="frame" x="369" y="37" width="101" height="75"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPI-4C-kcM" customClass="TTFaceView" customModule="TipTapSB" customModuleProvider="target">
+                                                    <rect key="frame" x="352" y="20" width="118" height="110"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-L3-SCG">
+                                                    <rect key="frame" x="82" y="42" width="215" height="65"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="goZ-RL-0mc" firstAttribute="leading" secondItem="VkJ-xS-CNg" secondAttribute="leadingMargin" id="5tG-Y9-tSJ"/>
+                                                <constraint firstItem="0jb-L3-SCG" firstAttribute="top" secondItem="VkJ-xS-CNg" secondAttribute="topMargin" constant="34" id="8WB-zr-8WS"/>
+                                                <constraint firstItem="v5G-nF-JY1" firstAttribute="top" secondItem="VkJ-xS-CNg" secondAttribute="topMargin" constant="82" id="9JM-Fm-e2d"/>
+                                                <constraint firstItem="0jb-L3-SCG" firstAttribute="leading" secondItem="goZ-RL-0mc" secondAttribute="trailing" constant="32" id="B47-vK-xMV"/>
+                                                <constraint firstAttribute="centerX" secondItem="goZ-RL-0mc" secondAttribute="centerX" constant="271" id="EA3-uz-QRg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="UPI-4C-kcM" secondAttribute="bottom" constant="11" id="IcG-cJ-H04"/>
+                                                <constraint firstItem="goZ-RL-0mc" firstAttribute="centerY" secondItem="VkJ-xS-CNg" secondAttribute="centerY" id="S1O-CY-AW0"/>
+                                                <constraint firstItem="v5G-nF-JY1" firstAttribute="leading" secondItem="UPI-4C-kcM" secondAttribute="trailing" constant="8" symbolic="YES" id="Vdm-q8-j1n"/>
+                                                <constraint firstItem="UPI-4C-kcM" firstAttribute="top" secondItem="VkJ-xS-CNg" secondAttribute="topMargin" constant="12" id="Z6a-Wf-RaX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="0jb-L3-SCG" secondAttribute="bottom" constant="34" id="b00-nz-EU8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="v5G-nF-JY1" secondAttribute="trailing" id="bw4-29-Jr0"/>
+                                                <constraint firstAttribute="trailing" secondItem="UPI-4C-kcM" secondAttribute="trailing" constant="130" id="d3j-Nn-AkL"/>
+                                                <constraint firstItem="goZ-RL-0mc" firstAttribute="centerY" secondItem="0jb-L3-SCG" secondAttribute="centerY" id="dyl-qs-iee"/>
+                                                <constraint firstItem="UPI-4C-kcM" firstAttribute="leading" secondItem="0jb-L3-SCG" secondAttribute="trailing" constant="55" id="hVT-vF-3RG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="v5G-nF-JY1" secondAttribute="bottom" constant="21" id="mYx-lY-t7A"/>
+                                                <constraint firstItem="UPI-4C-kcM" firstAttribute="leading" secondItem="VkJ-xS-CNg" secondAttribute="leading" constant="352" id="ql5-Te-I9g"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="tipAmount" destination="0jb-L3-SCG" id="aJ2-ZT-L86"/>

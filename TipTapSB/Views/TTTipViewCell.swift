@@ -18,6 +18,9 @@ class TTTipViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+//        let spinNumber: CGFloat = CGFloat(M_PI) * 1.5
+//        let transform: CGAffineTransform = CGAffineTransformMakeRotation(spinNumber)
+//        tipJudgementSlider.transform = transform
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

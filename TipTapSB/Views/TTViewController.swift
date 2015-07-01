@@ -19,9 +19,11 @@ class TTViewController: UIViewController, UITableViewDataSource, UITableViewDele
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        self.tableView.registerClass(TTBillViewCell.self, forCellReuseIdentifier: "Bill")
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,9 +31,9 @@ class TTViewController: UIViewController, UITableViewDataSource, UITableViewDele
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 44
-    }
+//    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        return 44
+//    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //

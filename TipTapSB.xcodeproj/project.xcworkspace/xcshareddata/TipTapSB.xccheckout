@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>22D3F57D-D9D2-4BB9-8633-AF6AD1560501</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TipTapSB</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A35FFBA85634A736BCEA71F7FE2750720659023C</key>
 		<string>github.com:FullMetalFist/TipTapSB.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TipTapSB.xcodeproj/project.xcworkspace</string>
+	<string>TipTapSB.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A35FFBA85634A736BCEA71F7FE2750720659023C</key>
